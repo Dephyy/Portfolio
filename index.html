@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Lord of the Mysteries inspired portfolio layout with occult-vintage styling, responsive sections, and accessible interactions.">
+  <title>LoTM Inspired Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="background.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-orb orb-one" aria-hidden="true"></div>
+  <div class="bg-orb orb-two" aria-hidden="true"></div>
+  <div class="cursor-aura" aria-hidden="true"></div>
+
+  <header class="site-header">
+    <nav class="container nav" aria-label="Main navigation">
+      <a class="logo" href="#home">A<span>R</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
+        Menu
+      </button>
+      <ul id="primary-menu" class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main-content">
+    <section id="home" class="hero container">
+      <div class="hero-copy glass">
+        <p class="eyebrow">Seer Pathway Portfolio</p>
+        <h1>Hi, I am <span class="accent">Ryan Jeremy Patricio</span><br>Software Developer</h1>
+        <p class="lead">
+          I build interactive, accessible, and high-performance digital products with modern web technologies.
+        </p>
+        <div class="hero-cta">
+          <a class="btn btn-primary" href="#projects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">About</p>
+        <h2>Building Useful Tech, Not Just Pretty UI</h2>
+      </div>
+      <article class="glass section-body">
+        <p>
+          I specialize in front-end engineering and user-centered design. My approach combines elegant visuals, strong architecture, and secure coding practices to deliver products that scale.
+        </p>
+        <p>
+          I focus on maintainability, accessibility, and performance from day one, ensuring every project remains robust across devices and locales.
+        </p>
+      </article>
+    </section>
+
+    <section id="skills" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">Skills</p>
+        <h2>Core Stack</h2>
+      </div>
+      <div class="skills-grid">
+        <article class="glass skill-card">
+          <h3>Frontend</h3>
+          <p>HTML, CSS, JavaScript, TypeScript, React, Next.js</p>
+        </article>
+        <article class="glass skill-card">
+          <h3>Backend</h3>
+          <p>Node.js, Express, REST APIs, PostgreSQL</p>
+        </article>
+        <article class="glass skill-card">
+          <h3>Quality & Security</h3>
+          <p>WCAG, OWASP-aware development, testing, CI/CD</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="projects" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">Projects</p>
+        <h2>Selected Work</h2>
+      </div>
+      <div class="project-grid">
+        <article class="glass project-card">
+          <h3>Nexus Commerce</h3>
+          <p>A secure e-commerce dashboard with role-based controls and real-time analytics.</p>
+          <a href="#" aria-label="View Nexus Commerce project details">Explore</a>
+        </article>
+        <article class="glass project-card">
+          <h3>Pulse Health</h3>
+          <p>Responsive telehealth portal optimized for low bandwidth and multi-language support.</p>
+          <a href="#" aria-label="View Pulse Health project details">Explore</a>
+        </article>
+        <article class="glass project-card">
+          <h3>Orbit Notes</h3>
+          <p>Privacy-first productivity app with encrypted sync and keyboard-first workflows.</p>
+          <a href="#" aria-label="View Orbit Notes project details">Explore</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <div class="section-head">
+        <p class="eyebrow">Contact</p>
+        <h2>Let us build something exceptional</h2>
+      </div>
+      <form class="glass contact-form" aria-label="Contact form">
+        <label for="name">Name</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+
+        <label for="email">Email</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <button class="btn btn-primary" type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>© <span id="year"></span> Alex Rivera. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

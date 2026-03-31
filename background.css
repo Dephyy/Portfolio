@@ -1,0 +1,106 @@
+body {
+  background:
+    radial-gradient(circle at 18% 15%, rgba(133, 30, 54, 0.2) 0%, transparent 40%),
+    radial-gradient(circle at 82% 84%, rgba(154, 118, 52, 0.18) 0%, transparent 42%),
+    linear-gradient(160deg, #0f0a10 0%, var(--bg) 48%, #131116 100%);
+  background-attachment: fixed;
+}
+
+.bg-grid {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(circle at center, rgba(210, 170, 99, 0.16) 1px, transparent 1px),
+    linear-gradient(rgba(176, 141, 83, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(176, 141, 83, 0.08) 1px, transparent 1px);
+  background-size: 28px 28px, 44px 44px, 44px 44px;
+  opacity: 0.5;
+  pointer-events: none;
+  z-index: -3;
+  animation: gridPulse 10s ease-in-out infinite;
+}
+
+.bg-orb {
+  position: fixed;
+  border-radius: 50%;
+  filter: blur(72px);
+  z-index: -2;
+  pointer-events: none;
+}
+
+.orb-one {
+  width: 340px;
+  height: 340px;
+  top: 10%;
+  left: -80px;
+  background: rgba(123, 50, 65, 0.4);
+  animation: driftOne 16s ease-in-out infinite alternate;
+}
+
+.orb-two {
+  width: 420px;
+  height: 420px;
+  right: -100px;
+  bottom: 8%;
+  background: rgba(184, 139, 68, 0.34);
+  animation: driftTwo 20s ease-in-out infinite alternate;
+}
+
+.cursor-aura {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(210, 170, 99, 0.24) 0%, rgba(210, 170, 99, 0) 70%);
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 220ms ease;
+}
+
+body.aura-active .cursor-aura {
+  opacity: 0.9;
+}
+
+@keyframes driftOne {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(40px, -30px) scale(1.08);
+  }
+}
+
+@keyframes driftTwo {
+  0% {
+    transform: translate(0, 0) scale(1);
+  }
+  100% {
+    transform: translate(-45px, 30px) scale(1.1);
+  }
+}
+
+@keyframes gridPulse {
+  0%,
+  100% {
+    opacity: 0.42;
+  }
+  50% {
+    opacity: 0.58;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bg-grid,
+  .orb-one,
+  .orb-two {
+    animation: none !important;
+  }
+
+  .cursor-aura {
+    display: none;
+  }
+}
