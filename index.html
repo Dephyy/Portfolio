@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Lord of the Mysteries inspired portfolio layout with occult-vintage styling, responsive sections, and accessible interactions.">
-  <title>LoTM Inspired Portfolio</title>
+  <meta name="description" content="Ryan Jeremy Patricio — Full-Stack Developer. LoTM-inspired portfolio with accessible, responsive, performance-focused design.">
+  <title>Ryan Jeremy Patricio | Full-Stack Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Cormorant+Garamond:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -21,15 +21,18 @@
 
   <header class="site-header">
     <nav class="container nav" aria-label="Main navigation">
-      <a class="logo" href="#home">A<span>R</span></a>
+      <a class="logo" href="#home" aria-label="Go to home">R<span>J</span></a>
+      <button class="lang-toggle" type="button" aria-pressed="false">
+        EN / FIL
+      </button>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-menu">
-        Menu
+        <span data-i18n="nav.menu">Menu</span>
       </button>
       <ul id="primary-menu" class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about" data-i18n="nav.about">About</a></li>
+        <li><a href="#skills" data-i18n="nav.skills">Skills</a></li>
+        <li><a href="#projects" data-i18n="nav.projects">Projects</a></li>
+        <li><a href="#contact" data-i18n="nav.contact">Contact</a></li>
       </ul>
     </nav>
   </header>
@@ -37,84 +40,113 @@
   <main id="main-content">
     <section id="home" class="hero container">
       <div class="hero-copy glass">
-        <p class="eyebrow">Seer Pathway Portfolio</p>
-        <h1>Hi, I am <span class="accent">Ryan Jeremy Patricio</span><br>Software Developer</h1>
-        <p class="lead">
-          I build interactive, accessible, and high-performance digital products with modern web technologies.
+        <p class="eyebrow" data-i18n="hero.eyebrow">Seer Pathway Portfolio</p>
+        <h1>
+          <span data-i18n="hero.hi">Hi, I am</span> <span class="accent">Ryan Jeremy Patricio</span><br>
+          <span data-i18n="hero.title">Full-Stack Developer</span>
+        </h1>
+        <p class="lead" data-i18n="hero.lead">
+          I build reliable, secure, and maintainable web apps—focused on functionality, clarity, and real-world usability.
+        </p>
+        <p class="meta" data-i18n="hero.location">
+          Lipa City, Batangas, Philippines • Open to remote
         </p>
         <div class="hero-cta">
-          <a class="btn btn-primary" href="#projects">View Projects</a>
-          <a class="btn btn-secondary" href="#contact">Contact Me</a>
+          <a class="btn btn-primary" href="#projects" data-i18n="hero.ctaProjects">View Projects</a>
+          <a class="btn btn-secondary" href="#contact" data-i18n="hero.ctaContact">Contact Me</a>
+          <a class="btn btn-secondary" href="RyanJeremyPatricio_Resume.pdf" target="_blank" rel="noopener" data-i18n="hero.ctaResume">View Resume</a>
         </div>
       </div>
     </section>
 
     <section id="about" class="section container">
       <div class="section-head">
-        <p class="eyebrow">About</p>
-        <h2>Building Useful Tech, Not Just Pretty UI</h2>
+        <p class="eyebrow" data-i18n="about.eyebrow">About</p>
+        <h2 data-i18n="about.title">Functionality-first, built to last</h2>
       </div>
       <article class="glass section-body">
-        <p>
-          I specialize in front-end engineering and user-centered design. My approach combines elegant visuals, strong architecture, and secure coding practices to deliver products that scale.
+        <p data-i18n="about.bio">
+          I’m an IT student and aspiring full-stack developer who enjoys building practical systems that solve real problems. I focus on clear workflows, secure handling of data, and maintainable code—so projects stay easy to improve over time.
         </p>
-        <p>
-          I focus on maintainability, accessibility, and performance from day one, ensuring every project remains robust across devices and locales.
-        </p>
+        <ul class="strength-list">
+          <li data-i18n="about.strength1">Analytical problem solving and structured thinking</li>
+          <li data-i18n="about.strength2">Adaptable—can match the client’s required functionality</li>
+          <li data-i18n="about.strength3">Security-aware mindset for internal systems and data protection</li>
+        </ul>
       </article>
     </section>
 
     <section id="skills" class="section container">
       <div class="section-head">
-        <p class="eyebrow">Skills</p>
-        <h2>Core Stack</h2>
+        <p class="eyebrow" data-i18n="skills.eyebrow">Skills</p>
+        <h2 data-i18n="skills.title">Tools I use (and can ramp up fast)</h2>
       </div>
       <div class="skills-grid">
         <article class="glass skill-card">
-          <h3>Frontend</h3>
-          <p>HTML, CSS, JavaScript, TypeScript, React, Next.js</p>
+          <h3 data-i18n="skills.frontendTitle">Frontend (basic)</h3>
+          <p data-i18n="skills.frontendBody">HTML, CSS, JavaScript • Responsive layouts • Accessibility basics</p>
         </article>
         <article class="glass skill-card">
-          <h3>Backend</h3>
-          <p>Node.js, Express, REST APIs, PostgreSQL</p>
+          <h3 data-i18n="skills.backendTitle">Backend & Data</h3>
+          <p data-i18n="skills.backendBody">SQL (PostgreSQL) • Data modeling • Backend fundamentals • Secure access patterns</p>
         </article>
         <article class="glass skill-card">
-          <h3>Quality & Security</h3>
-          <p>WCAG, OWASP-aware development, testing, CI/CD</p>
+          <h3 data-i18n="skills.toolsTitle">Analytics & Tools</h3>
+          <p data-i18n="skills.toolsBody">Power BI • Excel • Microsoft Office • Google Workspace • Lucidchart / Draw.io</p>
         </article>
       </div>
     </section>
 
     <section id="projects" class="section container">
       <div class="section-head">
-        <p class="eyebrow">Projects</p>
-        <h2>Selected Work</h2>
+        <p class="eyebrow" data-i18n="projects.eyebrow">Projects</p>
+        <h2 data-i18n="projects.title">Selected Work</h2>
       </div>
       <div class="project-grid">
         <article class="glass project-card">
-          <h3>Nexus Commerce</h3>
-          <p>A secure e-commerce dashboard with role-based controls and real-time analytics.</p>
-          <a href="#" aria-label="View Nexus Commerce project details">Explore</a>
+          <h3>iThesis</h3>
+          <p data-i18n="projects.ithesisDesc">
+            Library-based digital thesis repository with secure in-house access and usage monitoring for Batangas State University TNEU – Lipa Campus.
+          </p>
+          <ul class="project-bullets">
+            <li data-i18n="projects.ithesisBullet1">Backend developer: secure workflows, usage logging, and data handling.</li>
+            <li data-i18n="projects.ithesisBullet2">Security: RBAC + intranet-only access (IP filtering) + content protection approach.</li>
+            <li data-i18n="projects.ithesisBullet3">Search & insights: full-text search + analytics reporting.</li>
+          </ul>
+          <p class="project-meta" data-i18n="projects.ithesisStack">
+            Stack: React • Django • PostgreSQL • Elasticsearch • TF‑IDF (scikit-learn)
+          </p>
         </article>
         <article class="glass project-card">
-          <h3>Pulse Health</h3>
-          <p>Responsive telehealth portal optimized for low bandwidth and multi-language support.</p>
-          <a href="#" aria-label="View Pulse Health project details">Explore</a>
+          <h3>ThinkTank</h3>
+          <p data-i18n="projects.thinktankDesc">
+            Web-based collaboration platform focused on clear workflows, documentation, and practical team coordination.
+          </p>
+          <ul class="project-bullets">
+            <li data-i18n="projects.thinktankBullet1">Contributed to features and UI using HTML, CSS, and JavaScript.</li>
+            <li data-i18n="projects.thinktankBullet2">Created diagrams and workflow docs using Lucidchart and Draw.io.</li>
+          </ul>
+          <a href="https://github.com/Dephyy/ThinkTank_Proj" target="_blank" rel="noopener" data-i18n="projects.viewRepo">
+            View Repository
+          </a>
         </article>
         <article class="glass project-card">
-          <h3>Orbit Notes</h3>
-          <p>Privacy-first productivity app with encrypted sync and keyboard-first workflows.</p>
-          <a href="#" aria-label="View Orbit Notes project details">Explore</a>
+          <h3 data-i18n="projects.moreTitle">More on GitHub</h3>
+          <p data-i18n="projects.moreDesc">See more school projects and experiments on my GitHub profile.</p>
+          <a href="https://github.com/Dephyy" target="_blank" rel="noopener" data-i18n="projects.viewGitHub">
+            Visit GitHub
+          </a>
         </article>
       </div>
     </section>
 
     <section id="contact" class="section container">
       <div class="section-head">
-        <p class="eyebrow">Contact</p>
-        <h2>Let us build something exceptional</h2>
+        <p class="eyebrow" data-i18n="contact.eyebrow">Contact</p>
+        <h2 data-i18n="contact.title">Let’s build something practical</h2>
       </div>
-      <form class="glass contact-form" aria-label="Contact form">
+      <div class="contact-grid">
+        <form class="glass contact-form" aria-label="Contact form">
         <label for="name">Name</label>
         <input id="name" name="name" type="text" autocomplete="name" required>
 
@@ -124,13 +156,27 @@
         <label for="message">Message</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <button class="btn btn-primary" type="submit">Send Message</button>
-      </form>
+          <button class="btn btn-primary" type="submit" data-i18n="contact.send">Send Message</button>
+          <p class="form-note" data-i18n="contact.note">
+            This uses your email app to send a message (free, no account required).
+          </p>
+        </form>
+        <aside class="glass contact-card" aria-label="Contact links">
+          <h3 data-i18n="contact.linksTitle">Contact details</h3>
+          <ul class="contact-links">
+            <li><a href="mailto:ryanjeremypatricio@gmail.com">ryanjeremypatricio@gmail.com</a></li>
+            <li><a href="tel:+639619036935">0961 903 6935</a></li>
+            <li><a href="https://www.linkedin.com/in/ryan-jeremy-patricio-9b359b3bb/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://github.com/Dephyy" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="RyanJeremyPatricio_Resume.pdf" target="_blank" rel="noopener" data-i18n="contact.resume">Resume (PDF)</a></li>
+          </ul>
+        </aside>
+      </div>
     </section>
   </main>
 
   <footer class="site-footer container">
-    <p>© <span id="year"></span> Alex Rivera. All rights reserved.</p>
+    <p>© <span id="year"></span> <span data-i18n="footer.name">Ryan Jeremy Patricio</span>. <span data-i18n="footer.rights">All rights reserved.</span></p>
   </footer>
 
   <script src="script.js"></script>

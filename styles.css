@@ -72,6 +72,22 @@ body {
   gap: 1rem;
 }
 
+.lang-toggle {
+  border: 1px solid var(--line);
+  background: rgba(19, 14, 20, 0.6);
+  color: var(--text);
+  border-radius: 999px;
+  padding: 0.35rem 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+.lang-toggle:hover,
+.lang-toggle:focus-visible {
+  border-color: rgba(210, 170, 99, 0.56);
+  box-shadow: 0 10px 22px rgba(0, 0, 0, 0.25);
+}
+
 .logo {
   font-family: "Cinzel", "Times New Roman", serif;
   font-weight: 700;
@@ -159,6 +175,13 @@ body {
 .hero-copy {
   padding: clamp(1.25rem, 2.4vw, 2rem);
   max-width: 860px;
+}
+
+.meta {
+  margin: 0.85rem 0 0;
+  color: var(--muted);
+  font-weight: 600;
+  letter-spacing: 0.02em;
 }
 
 .eyebrow {
@@ -268,6 +291,55 @@ h1 {
 .section-body {
   padding: 1.25rem 1.4rem;
   color: var(--muted);
+}
+
+.strength-list {
+  margin: 1rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.project-bullets {
+  margin: 0.85rem 0 0;
+  padding-left: 1.1rem;
+  color: var(--muted);
+}
+
+.project-meta {
+  margin: 0.9rem 0 0;
+  color: var(--muted);
+  font-weight: 600;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  gap: 1rem;
+}
+
+.contact-card {
+  padding: 1.2rem;
+}
+
+.contact-links {
+  margin: 0.75rem 0 0;
+  padding-left: 1.1rem;
+}
+
+.contact-links a {
+  color: var(--text);
+  text-decoration: none;
+}
+
+.contact-links a:hover,
+.contact-links a:focus-visible {
+  color: var(--primary);
+}
+
+.form-note {
+  margin: 0.4rem 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
 }
 
 .skills-grid,
@@ -411,6 +483,10 @@ a:focus-visible {
 @media (max-width: 720px) {
   .menu-toggle {
     display: inline-flex;
+  }
+
+  .contact-grid {
+    grid-template-columns: 1fr;
   }
 
   .nav-links {
