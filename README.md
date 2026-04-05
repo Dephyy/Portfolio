@@ -16,7 +16,7 @@ I’m an IT undergraduate focused on building **reliable, secure, and maintainab
 
 More projects and experiments: [GitHub @Dephyy](https://github.com/Dephyy)
 
-## Skills (high level)
+## Skills
 
 - **Frontend (basic):** HTML, CSS, JavaScript; responsive layouts; accessibility basics.
 - **Backend & data:** SQL (PostgreSQL), data modeling, secure access patterns.
