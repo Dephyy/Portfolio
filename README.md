@@ -1,12 +1,12 @@
-# Ryan Jeremy Patricio
+# Ryan Jeremy Patricio 
 
 **Full-Stack Developer** · Lipa City, Batangas, Philippines · Open to remote
 
-I’m an IT undergraduate focused on building **reliable, secure, and maintainable** web systems—especially when the priority is **functionality, clear workflows, and real-world usability** rather than flashy UI alone.
+I’m an IT graduate focused on building **reliable, secure, and maintainable** web systems—especially when the priority is **functionality, clear workflows, and real-world usability** rather than flashy UI alone.
 
 ## Background
 
-- **Education:** Bachelor of Science in Information Technology (Business Analytics), Batangas State University TNEU – Lipa Campus (2022–present), undergraduate.
+- **Education:** Bachelor of Science in Information Technology (Business Analytics), Batangas State University TNEU – Lipa Campus (2022–2026), graduate.
 - **Focus:** Backend-oriented work, data and reporting, system design, and security-aware development for institutional and collaborative tools.
 
 ## Selected work
