@@ -1,36 +1,45 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Portfolio — Lord of the Mysteries Inspired
 
-## Getting Started
+A Victorian occult archive aesthetic portfolio for Ryan Jeremy Patricio — Software Developer.
 
-First, run the development server:
+## Stack
+
+- **Next.js 16** (App Router, TypeScript)
+- **Tailwind CSS 4** (via `@tailwindcss/postcss`)
+- **Framer Motion** (animations)
+- **Lucide React** (icons)
+- **Vercel** (deployment)
+
+## Quick Start
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) to view the site.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Build
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run build
+npm run start
+```
 
-## Learn More
+## Deploy to Vercel
 
-To learn more about Next.js, take a look at the following resources:
+Push this repository to GitHub, then import it at vercel.com.
+Vercel will detect the Next.js project and run `npm run build` automatically.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Project Structure
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- `src/data/` — Site data (nav items, developer profile, projects, skills, experience)
+- `src/components/` — Section components (Navbar, Hero, Developer, Pathways, Artifacts, Records, Dossier, ContactRitual, Footer)
+- `public/` — Static assets (includes `RyanJeremyPatricio_Resume.pdf`)
 
-## Deploy on Vercel
+## Design
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Lord of the Mysteries / Victorian occult archive aesthetic
+- Color palette: `#08090D` background, `#C9B98A` muted gold, `#A88B4A` accent
+- Tarot card labels for navigation (THE FOOL, THE MAGICIAN, THE HERMIT, THE WORLD, JUDGEMENT)
+- Reduced-motion support, semantic HTML, keyboard navigation
